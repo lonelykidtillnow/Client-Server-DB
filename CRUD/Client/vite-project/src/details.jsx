@@ -11,7 +11,7 @@ const Fetch=()=>{
     //Fetch all Details
     async function api(){
         try{
-            const req=await fetch("https://crud-using-postgresql-1.onrender.com/students")
+            const req=await fetch("https://client-server-db.onrender.com/students")
             const res=await req.json()
             console.log(res.data)
             setvalue(res.data)
@@ -22,7 +22,7 @@ const Fetch=()=>{
     }
     //Delete Details
     async function deleted(rollno){
-        const req=await fetch("https://crud-using-postgresql-1.onrender.com",{
+        const req=await fetch("https://client-server-db.onrender.com",{
             "method":"DELETE",
             headers:{"Content-Type":"application/json"},
             "body":JSON.stringify({roll_no:rollno})

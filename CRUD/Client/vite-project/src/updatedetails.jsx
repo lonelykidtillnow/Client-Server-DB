@@ -13,7 +13,7 @@ const Update=()=>{
 
     async function api(){
         try{
-            const req=await fetch("https://crud-using-postgresql-1.onrender.com",{
+            const req=await fetch("https://client-server-db.onrender.com",{
                 "method":"PUT",
                 headers:{"Content-Type":"application/json"},
                 "body":JSON.stringify(value)

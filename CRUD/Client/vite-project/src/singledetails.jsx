@@ -11,7 +11,7 @@ const Fetchid=()=>{
 
     async function api(){
         try{
-            const req=await fetch(`https://crud-using-postgresql-1.onrender.com/students/${id}`)
+            const req=await fetch(`https://client-server-db.onrender.com/students/${id}`)
             const res=await req.json()
             console.log(res.data)
             setvalue(res.data)
